@@ -10,7 +10,7 @@ con = open('convo.txt')
 trainbot.train(con.readlines())
 
 print('start to chat.....')
-print('hey sudhir how r u ')
+print('hey sudhir how r u  be')
 
 while True:
     user = input()
