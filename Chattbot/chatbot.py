@@ -14,6 +14,7 @@ bot = ChatBot('xox')
 trainbot = ListTrainer(bot)
 con = open('convo.txt')
 trainbot.train(con.readlines())
+print('hello')
 
 """while True:
     user = input()
