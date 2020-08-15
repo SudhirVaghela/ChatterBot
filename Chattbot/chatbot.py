@@ -34,7 +34,7 @@ lbl.pack(side=LEFT)
 
 mainframe = Frame(window, bg="dark slate gray", bd=10, width=500, height=200, relief=RIDGE)
 mainframe.pack(side=LEFT)
-print('sudhir')
+
 
 def convertation():
     user = que.get()
