@@ -2,6 +2,11 @@ from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 from tkinter import *
 from PIL import Image, ImageTk
+import pyttsx3
+
+engine = pyttsx3.init()
+voice = engine.getProperty('voices')
+engine.setProperty('voice', voice[0].id)
 
 window = Tk()
 window.configure(bg='gray0')
@@ -14,7 +19,6 @@ bot = ChatBot('xox')
 trainbot = ListTrainer(bot)
 con = open('convo.txt')
 trainbot.train(con.readlines())
-
 
 """while True:
     user = input()
@@ -37,15 +41,18 @@ mainframe = Frame(window, bg="dark slate gray", bd=10, width=500, height=200, re
 mainframe.pack(side=LEFT)
 
 
+def speak(word):
+    engine.say(word)
+    engine.runAndWait()
+
+
 def convertation():
     user = que.get()
     answer = bot.get_response(user)
     msgs.insert(END, "YOU : " + user)
     msgs.insert(END, "XOX : " + str(answer))
-
+    speak(answer)
     msgs.yview(END)
-
-
 
     que.delete(0, END)
 
