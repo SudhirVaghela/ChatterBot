@@ -6,6 +6,8 @@ import pyttsx3
 
 engine = pyttsx3.init()
 voice = engine.getProperty('voices')
+engine.setProperty('rate', 120)
+engine.setProperty('volume', 1.0)
 engine.setProperty('voice', voice[0].id)
 
 window = Tk()
@@ -41,11 +43,6 @@ mainframe = Frame(window, bg="dark slate gray", bd=10, width=500, height=200, re
 mainframe.pack(side=LEFT)
 
 
-def speak(word):
-    engine.say(word)
-    engine.runAndWait()
-
-
 def convertation():
     user = que.get()
     answer = bot.get_response(user)
@@ -55,6 +52,11 @@ def convertation():
     msgs.yview(END)
 
     que.delete(0, END)
+
+
+def speak(word):
+    engine.say(word)
+    engine.runAndWait()
 
 
 def enter_btn(event):
