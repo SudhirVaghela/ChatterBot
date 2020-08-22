@@ -7,7 +7,7 @@ import pyttsx3
 engine = pyttsx3.init()
 voice = engine.getProperty('voices')
 engine.setProperty('rate', 120)
-engine.setProperty('volume', 0.9)
+engine.setProperty('volume', 1.0)
 engine.setProperty('voice', voice[0].id)
 
 window = Tk()
