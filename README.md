@@ -1,6 +1,6 @@
 # ChatterBot - virtual_assistant
 chatter bot with gui is made using AIML using python.
-this bot is as simple about what ever kind of bot you want to develop. this is a basic bot code for all kinds of bot.
+this bot is as simple about what ever kind of bot you want to develop. this is a basic bot code for all kinds of bots.
 - modules used chatterbot
 - for GUI module used Tkinter 
 - for database  natural language tool kit for natural language processing (NLP)
