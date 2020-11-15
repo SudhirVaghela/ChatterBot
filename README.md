@@ -1,2 +1,7 @@
-# ChatterBot
-Here i have created chatbot there are some code is in comment which is only for system means it is without gui.to learn from basics first my advice to you that put in commnet the code which is with gui firt uncomment code and run it . Hope it will help you for more understanding. 
+# ChatterBot - virtual_assistant
+chatter bot with gui is made using AIML using python.
+this bot is as simple about what ever kind of bot you want to develop. this is a basic bot code for all kinds of bots.
+- modules used chatterbot
+- for GUI module used Tkinter 
+- for database  natural language tool kit for natural language processing (NLP)
+- for voice pyttsx3 module is used for text to speech feature.
