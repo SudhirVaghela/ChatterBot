@@ -10,6 +10,7 @@ engine.setProperty('rate', 120)
 engine.setProperty('volume', 0.9)
 engine.setProperty('voice', voice[0].id)
 
+
 window = Tk()
 window.configure(bg='gray0')
 window.title('ChatterBOT')
@@ -57,6 +58,7 @@ def convertation():
 def speak(word):
     engine.say(word)
     engine.runAndWait()
+    #this
 
 
 def enter_btn(event):
@@ -82,5 +84,7 @@ btn.pack(side=RIGHT, padx=5)
 btmframe.grid(row=1, column=0)
 
 window.bind('<Return>', enter_btn)
+
+
 
 window.mainloop()
